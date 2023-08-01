@@ -12,7 +12,7 @@ ul{
 }
 header{
      position: relative;
-     height: 50vh;
+     height: 70vh;
 }
 .video-container{
      position: absolute;
@@ -110,7 +110,7 @@ nav{
      text-align: center;
 }
 .banner p{
-     font-size: 18px;
+     font-size: 16px;
 }
 .banner .link *{
      font-size: 1.2rem;
@@ -154,9 +154,10 @@ footer{
 }
 .footer2{
      background-color: rgb(21, 176, 214);
-     padding: 1rem;
+     padding: 1rem 0;
      color: #fff;
      text-align: center;
+     font-size: 14px;
 }
 .active{
      transform: translateX(0);
