@@ -30,6 +30,7 @@ input[type=submit]{
      background-color: rgb(21, 176, 214);
      border: 1px solid rgb(21, 176, 214);
      margin: auto;
+     cursor: pointer;
 }
 .map_container{
      height: 50vh;
@@ -37,7 +38,8 @@ input[type=submit]{
 }
 .map_container iframe{
      height: 100%;
-     object-fit: cover;
+     width: 100%;
+     object-fit:cover;
 }
 @media screen and (min-width:768px) {
      main{

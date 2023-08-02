@@ -1,0 +1,85 @@
+main{
+  padding: 2rem 0;
+  background-color: #111;
+}
+main h1{
+  text-align: center;
+  color: rgb(21, 176, 214);
+}
+.wrapper{
+  width: 100%;
+  display: grid;
+  max-width: 768px;
+  margin:2rem auto;
+  grid-template-columns: 50% 50%;
+  gap: 1rem;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .wrapper{
+    grid-template-columns: 100%;
+  }
+}
+.wrapper .box{
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+  perspective: 1000px;
+  z-index: 0;
+} 
+.wrapper .box .front-face{
+  background:linear-gradient(to top ,transparent,#070707da) ,url(../images/1.jpg) center center/cover;
+  height: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+.box .front-face .icon{
+  height: 80px;
+}
+.box .front-face .icon i{
+  font-size: 65px;
+}
+.box .front-face span,
+.box .back-face span{
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .front-face .icon i,
+.box .front-face span{
+  background:#fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box .back-face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 220px;
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  opacity: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background: rgb(21, 176, 214);
+  transform: translateY(110px) rotateX(-90deg);
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.box .back-face p{
+  margin-top: 10px;
+  text-align: justify;
+}
+.box:hover .back-face{
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+.box:hover .front-face{
+  opacity: 0;
+  transform: translateY(-110px) rotateX(90deg);
+}
