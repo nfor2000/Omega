@@ -134,8 +134,15 @@ footer{
      gap: 1rem;
      padding: 1rem;
 }
+.footer_links h3{
+     text-align: center;
+}
 .footer_links ul li{
      text-align: center;
+}
+.footer_links ul li a:hover{
+     text-decoration: underline;
+     transition: all 0.3s ease-in-out;
 }
 .footer1 *{
      color: #fff;

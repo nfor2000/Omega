@@ -6,8 +6,7 @@ const CloseMenu = document.querySelector(".close-menu");
 
 const navLink = document.querySelectorAll(".nav_link");
 
-const date = document.querySelector(".date");
-date.innerHTML = new Date().getFullYear();
+
 
 menuBar.addEventListener("click",function (){
      navMenu.classList.add("active");

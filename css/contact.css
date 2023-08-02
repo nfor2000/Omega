@@ -1,0 +1,58 @@
+main{
+     height: auto;
+}
+.form_container{
+     padding: 1rem;
+}
+.form_container h2{
+     color: rgb(21, 176, 214);
+     font-size: 1.6rem;
+}
+.input-field{
+     margin-bottom: 1rem;
+}
+.input-field label{
+     display: block;
+     font-size: 1.2rem;
+     text-transform: uppercase;
+}
+.input-field input, .input-field textarea{
+     width: 100%;
+     font-size: 1rem;
+     padding:0.4rem 1rem;
+     outline-color: rgb(21, 176, 214);
+}
+input[type=submit]{
+     display: block;
+     max-width: 200px;
+     padding: 0.4rem 1rem;
+     color: #fff;
+     background-color: rgb(21, 176, 214);
+     border: 1px solid rgb(21, 176, 214);
+     margin: auto;
+}
+.map_container{
+     height: 50vh;
+     background-color: rgb(21, 176, 214);
+}
+.map_container iframe{
+     height: 100%;
+}
+@media screen and (min-width:768px) {
+     main{
+          max-width: 1024px;
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          height: auto;
+          margin:2rem auto;
+          border: 1px solid rgb(21, 176, 214);
+     }
+     .map_container{
+          height: 100%;
+     }
+     .name-email-form{
+          display: flex;
+          gap: 1rem;
+     }
+}
