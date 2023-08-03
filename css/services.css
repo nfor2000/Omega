@@ -177,7 +177,21 @@ section > p{
   padding: 1rem;
   font-size: 1.2rem;
 }
-
+input[type=submit]{
+  max-width: 30%;
+  margin: auto;
+  display: block;
+  background-color: rgb(21, 176, 214);
+  color: #fff;
+  border: 1px solid #fff;
+}
+input[type=submit]:hover{
+  background-color: #fff;
+  color: rgb(21, 176, 214);
+  border-color:rgb(21, 176, 214) ;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
 @media (max-width: 768px) {
   main{
     padding: 1rem;

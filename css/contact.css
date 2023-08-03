@@ -43,6 +43,10 @@ input[type=submit]{
 }
 @media screen and (min-width:768px) {
      main{
+          height: 70vh;
+          display: flex;
+     }
+     .container{
           max-width: 1024px;
           width: 100%;
           display: grid;
