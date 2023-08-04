@@ -34,8 +34,8 @@ input[type=submit]{
 }
 .map_container{
      position: relative;
-     height: 40vh;
-     background-color: #ccceee;
+     height: 60vh;
+     background-color: rgb(219, 216, 216);
 }
 .map_container iframe{
      height: 100%;
@@ -60,6 +60,16 @@ input[type=submit]{
      margin: auto;
      border-radius: 50%;
      animation: spin 2s linear infinite;
+}
+#error{
+     position: absolute;
+     top: 30%;
+     left: 0;
+     display: none;
+     text-align: center;
+     padding: 0 4rem;
+     color: red;
+     font-weight: 600;
 }
 @media screen and (min-width:768px) {
      main{
