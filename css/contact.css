@@ -33,13 +33,33 @@ input[type=submit]{
      cursor: pointer;
 }
 .map_container{
+     position: relative;
      height: 40vh;
-     background-color: rgb(21, 176, 214);
+     background-color: #ccceee;
 }
 .map_container iframe{
      height: 100%;
      width: 100%;
      object-fit: cover;
+}
+#preloader{
+     position: absolute;
+     left: 0;
+     top: 0;
+     height: 100%;
+     width: 100%;
+     background-color: #ccceee;
+     z-index: 999;
+     display: flex;
+}
+#loader{
+     width: 100px;
+     height: 100px;
+     border: 16px solid #fff;
+     border-bottom: 16px solid rgb(21, 176, 214);
+     margin: auto;
+     border-radius: 50%;
+     animation: spin 2s linear infinite;
 }
 @media screen and (min-width:768px) {
      main{
@@ -63,3 +83,11 @@ input[type=submit]{
           gap: 1rem;
      }
 }
+@keyframes spin {
+     0% {
+       transform:  rotate(0deg);
+     }
+     100% {
+       transform:  rotate(360deg);
+     }
+   }
