@@ -36,9 +36,13 @@
     padding: 0.4rem 1rem;
     color: #fff;
     background-color: rgb(21, 176, 214);
-    border: 2px solid black;
+    box-shadow: 3px 2px 0px #333;
+    border-radius: 5px;
 }
-
+.button-box button:active{
+    box-shadow: 2px 1px 0px #333;
+    transform: translateX(3px);
+}
 .button-box button a{
     color:white;
 }

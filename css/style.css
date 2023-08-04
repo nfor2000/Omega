@@ -87,39 +87,70 @@ nav {
      margin-bottom: 1rem;
 }
 
-.banner {
-     height: 80%;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     gap: 10px;
-     padding: 1rem;
-     z-index: 0;
-     width: 100%;
-}
 
-.banner * {
-     color: #fff;
-     text-align: center;
-}
-
-.banner p {
-     font-size: 16px;
-}
-
-.banner .link * {
+.slide_show .link * {
      font-size: 1.2rem;
+     color: white;
 }
 
-.banner .link a[href='services.html']:hover {
+.slide_show .link a[href='services.html']:hover {
      color: rgb(21, 176, 214);
      transition: all 0.3s ease-in-out;
 }
 
-.banner h2 {
+.slide_show h2 {
      color: rgb(21, 176, 214);
      font-size: 2rem;
+}
+
+.slideshow_container {
+     height: 60vh;
+     position: relative;
+}
+
+.slide_show {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     gap: 1rem;
+}
+
+.slide_show p,
+.slide_show h2 {
+     color: #fff;
+}
+
+.slide_show::after {
+     position: absolute;
+     content: "";
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     z-index: -1;
+     background-color: #000000a4;
+}
+
+.slide_show p {
+     width: 100%;
+     max-width: 540px;
+     text-align: center;
+     padding: 0.5rem;
+}
+
+.slide_show img {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     z-index: -1;
 }
 
 footer {
@@ -179,9 +210,16 @@ footer {
      transform: translateX(0);
 }
 
+.fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 3s;
+     animation-name: fade;
+     animation-duration: 3s;
+}
+
 @media screen and (min-width:768px) {
      header {
-          height: 80vh;
+          height: 90vh;
      }
 
      .nav_menu {
@@ -193,6 +231,10 @@ footer {
           gap: 2rem;
      }
 
+     .slideshow_container {
+          height: 90vh;
+     }
+     
      .nav_item {
           margin: auto;
      }
@@ -209,10 +251,6 @@ footer {
           display: none;
      }
 
-     .banner {
-          max-width: 820px;
-          margin: auto;
-     }
 
      .footer1 {
           flex-direction: row;
@@ -225,3 +263,12 @@ footer {
      }
 }
 
+@keyframes fade {
+     from {
+          opacity: 0.4;
+     }
+
+     to {
+          opacity: 1;
+     }
+}
