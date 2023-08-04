@@ -1,49 +1,36 @@
-*{
+* {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
      font-family: 'Poppins', sans-serif;
 }
-a{
+
+a {
      text-decoration: none;
 }
-ul{
+
+ul {
      list-style: none;
 }
-header{
+
+header {
      position: relative;
      height: 70vh;
 }
-.video-container{
-     position: absolute;
-     left: 0;
-     top: 0;
-     width: 100%;
-     height: 100%;
-     z-index: -2;
-     object-fit: cover;
-}
-.logo{
+
+.logo {
      background-color: black;
      padding: 1rem;
      text-align: center;
 }
-.logo_text{
+
+.logo_text {
      font-family: 'Fraunces', serif;
      color: #fff;
      font-weight: 600;
 }
-header::after{
-     position: absolute;
-     content: "";
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-color: rgba(0, 0, 0, 0.75);
-     z-index: -2;
-}
-nav{
+
+nav {
      position: relative;
      display: flex;
      justify-content: space-between;
@@ -55,7 +42,7 @@ nav{
      height: 10vh;
 }
 
-.nav_menu{
+.nav_menu {
      position: fixed;
      left: 0%;
      top: 0;
@@ -67,33 +54,40 @@ nav{
      transform: translateX(-100%);
      transition: all 0.3s ease-in-out;
 }
-.nav_item{
+
+.nav_item {
      margin: 1rem 0;
      text-align: center;
 }
-.nav_item:hover .fa{
+
+.nav_item:hover .fa {
      font-size: 1.5rem;
      margin-left: 0.6rem;
 }
-.nav_link{
+
+.nav_link {
      color: #fff;
      font-size: 1rem;
 }
-.btn{
+
+.btn {
      width: 40px;
      height: 40px;
-     background:transparent ;
+     background: transparent;
      border: 1px solid #fff;
      cursor: pointer;
 }
-.fa{
+
+.fa {
      color: #fff;
      transition: all 0.3s ease-in-out;
 }
-.close-menu{
+
+.close-menu {
      margin-bottom: 1rem;
 }
-.banner{
+
+.banner {
      height: 80%;
      display: flex;
      flex-direction: column;
@@ -105,28 +99,34 @@ nav{
      width: 100%;
 }
 
-.banner *{
+.banner * {
      color: #fff;
      text-align: center;
 }
-.banner p{
+
+.banner p {
      font-size: 16px;
 }
-.banner .link *{
+
+.banner .link * {
      font-size: 1.2rem;
 }
-.banner .link a[href='services.html']:hover{
+
+.banner .link a[href='services.html']:hover {
      color: rgb(21, 176, 214);
      transition: all 0.3s ease-in-out;
 }
-.banner h2{
+
+.banner h2 {
      color: rgb(21, 176, 214);
      font-size: 2rem;
 }
-footer{
+
+footer {
      background-color: #000;
 }
-.footer1{
+
+.footer1 {
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -134,46 +134,57 @@ footer{
      gap: 1rem;
      padding: 1rem;
 }
-.footer_links h3{
+
+.footer_links h3 {
      text-align: center;
 }
-.footer_links ul li{
+
+.footer_links ul li {
      text-align: center;
 }
-.footer_links ul li a:hover{
+
+.footer_links ul li a:hover {
      text-decoration: underline;
      transition: all 0.3s ease-in-out;
 }
-.footer1 *{
+
+.footer1 * {
      color: #fff;
 }
-.footer1 .contact > *{
+
+.footer1 .contact>* {
      display: block;
      text-align: center;
      margin-bottom: 0.4rem;
 }
-.footer1 .social_media a{
+
+.footer1 .social_media a {
      margin-left: 0.6rem;
 }
-.payment img{
+
+.payment img {
      width: 80px;
      display: block;
 }
-.footer2{
+
+.footer2 {
      background-color: #111;
      padding: 1rem 0;
      color: #fff;
      text-align: center;
      font-size: 14px;
 }
-.active{
+
+.active {
      transform: translateX(0);
 }
-@media  screen and (min-width:768px) {
-     header{
+
+@media screen and (min-width:768px) {
+     header {
           height: 80vh;
      }
-     .nav_menu{
+
+     .nav_menu {
           position: static;
           height: auto;
           width: auto;
@@ -181,28 +192,36 @@ footer{
           display: flex;
           gap: 2rem;
      }
-     .nav_item{
+
+     .nav_item {
           margin: auto;
      }
-     .nav_menu .logo{
+
+     .nav_menu .logo {
           display: none;
      }
-     .close-menu{
+
+     .close-menu {
           display: none;
      }
-     .open-menu{
+
+     .open-menu {
           display: none;
      }
-     .banner{
+
+     .banner {
           max-width: 820px;
           margin: auto;
      }
-     .footer1{
+
+     .footer1 {
           flex-direction: row;
           justify-content: space-evenly;
           align-items: center;
      }
-     .payment img{
+
+     .payment img {
           display: inline;
      }
 }
+
