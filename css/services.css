@@ -75,6 +75,9 @@ section h2{
 }
 section > p{
   text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #000;
 }
 
 .content{
@@ -95,6 +98,8 @@ section > p{
 .request_field label{
   display: block;
   margin-bottom: 0.4rem;
+  color: #000;
+  font-weight: 600;
 }
 .request_field input{
   display: block;
